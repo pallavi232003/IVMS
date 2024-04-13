@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add volunteer form</title>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            background-position: center;
+            background-size: cover;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url(https://www.imageshine.in/uploads/gallery/geometric-Blue-Wallpaper-Free-Download.jpg);
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            background-color: #fff;
+            width: 380px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            width: 100%;
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: medium;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form id="signupForm">
+
+
+
+            <!-- <label for="name">Volunteer ID </label>
+            <input type="text" required> -->
+
+
+            <label for="name">Name</label>
+            <select style="width: 330px; padding-top: 14px; padding-bottom: 14px; border-left: 2px solid black ; border-top:2px solid black; border-right: 2px solid grey; border-bottom: 2px solid grey; border-radius: 5px;" name="name" id="dog-names"> 
+                 <option value='Aishwarya'>Aishwarya</option>
+                 <option value='Kajal'>Kajal</option>
+                 <option value='Amita'>Amita</option>
+                 <option value='Pallavi'>Pallavi</option>
+                 <option value='Rupak'>Rupak</option>
+                 <option value='Jadeja'>Jadeja sir</option>
+                 <option value='Vipul'>Vipul</option>
+                 <option value='Summit'>Summit</option>
+                 <option value='Neha'>Neha</option>
+                 <option value='Nitish'>Nitish</option>
+                 <option value='Sachin'>Sachin</option>
+                 <option value='soniya'>soniya</option>
+                 <option value='kittu'>kittu</option>
+                 <option value='Rahul'>Rahul</option>
+                 <option value='Fun'>Fun</option>
+                 <option value='Competitive'>Competitive</option>
+                 <option value='Translation'>Translation</option>
+                 <option value='Collaboration'>Collaboration</option>
+     
+               </select>
+
+
+
+            <label for="dog-names">Task Name:</label>
+            <select style="width: 330px; padding-top: 14px; padding-bottom: 14px; border-left: 2px solid black ; border-top:2px solid black; border-right: 2px solid grey; border-bottom: 2px solid grey; border-radius: 5px;" name="dog-names" id="dog-names"> 
+                <option value="task0"></option>
+                <option value="task1">1 Article-own</option>
+                <option value="task2">1 webinar-own</option>
+                <option value="task3">5 Articles</option>
+                <option value="task4">Organise young leader activites</option>
+                <option value="task5">Volunteer Team to be created</option>
+                <option value="task6">20 participants for any program</option>
+                <option value="task7">Organise webinars:soaring wing</option>
+                <option value="task8">Counducting Sessions</option>
+                <option value="task9">Centre onboarding</option>
+                <option value="task10">Social survey-issues/traning</option>
+                <option value="task11">Wisetalk</option>
+                <option value="task12">Empathee</option>
+                <option value="task13">Gypse</option>
+                <option value="task14">Synergy</option>
+                <option value="task15">Interesting educational module</option>
+                <option value="task15">Young leader-college</option>
+                <option value="task16">Workshops organise</option>
+                <option value="task17">Wisetalk(translation)-q/a</option>
+                <option value="task18">Global Indian</option>
+                <option value="task19">Inspirit</option>
+                <option value="task20">Spring</option>
+                <option value="task21">Prograce:career</option>
+                <option value="task22">Coding Workshop</option>
+                <option value="task23">Sunshine offline</option>
+                <option value="task24">Fun n learn</option>
+                <option value="task25">Competitive exam/logical</option>
+                <option value="task26">IELTS(classes)</option>
+                <option value="task27">Translation/PDF..millions-both ways</option>
+                <option value="task28">Collaboration with ngos</option>
+                <option value="task29">Documentary sessions</option>
+                <!--<option value="task30"></option>
+                <option value="task31"></option>
+                <option value="task32"></option>-->
+            
+        
+                
+              </select>
+
+
+            <label style="margin-top: 10px;" for="password">Action</label>
+            <input type="text" required>
+
+
+            <label for="status">Status:</label>
+            <select style="width: 330px; padding-top: 14px; padding-bottom: 14px; border-left: 2px solid black ; border-top:2px solid black; border-right: 2px solid grey; border-bottom: 2px solid grey; border-radius: 5px;" name="status" id="dog-names"> 
+                <option>Just Allotted</option> 
+                <option >Started</option> 
+                <option >Under progress</option> 
+                <option >About to be completed</option> 
+                <option >completed</option>
+                <option >Cancelled</option>
+ 
+            </select>
+
+            <label style="margin-top: 10px;" for="name"> Deadline:</label>
+            <input type="text" name="name" required>
+
+
+
+            <br>
+
+            <button style="margin-top: 10px;" type="button">Submit</button>
+            <br>
+
+        </form>
+</body>
+
+</html>

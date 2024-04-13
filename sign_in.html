@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            /*background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)), url(https://img.freepik.com/free-vector/volunteering-act-flat-composition_98292-8471.jpg);*/
+            background-image: url(https://cdn.wallpapersafari.com/90/36/Gwp8zl.jpg);
+            background-image: url(https://t3.ftcdn.net/jpg/02/10/55/60/360_F_210556027_pNmg4EUFwrn2W25SDdWayPakVIztTSe8.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        img {
+            padding: 0 50px;
+        }
+        
+        .container {
+            background-color: #fff;
+            width: 380px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            width: 100%;
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: medium;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form id="signInForm" action="sign_in.php" method="post">
+            <div class="img">
+                <center>
+                    <img src="https://adore.ivdata.in/cores/img/adore_pcons2.png
+                " width="200px">
+                </center>
+            </div>
+            <br>
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+
+            <br><br>
+
+            <button type="button" onclick="signIn()">Log In</button>
+            <br><br>
+
+            <!-- <label>create account</label>-->
+            <a href="http://127.0.0.1:5500/signup.html">Create account</a>
+
+
+        </form>
+        <p id="message"></p>
+
+    </div>
+
+
+    <script>
+        function signIn() {
+            // You can add JavaScript logic here for handling the sign-in process
+            // alert('Sign-in logic will go here.');
+            // Get values from 
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Simple validation
+            if (username === 'your_username' && password === 'your_password') {
+                document.getElementById('message').innerHTML = 'Sign in successful!';
+            } else {
+                document.getElementById('message').innerHTML = 'Invalid username or password. Please try again.';
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
